@@ -1,0 +1,82 @@
+.globalContainer{
+   width: 100%;
+   padding: 50px 60px;
+   display: flex;
+   gap: 20px;
+}
+
+.globalImg{
+   width: 450px;
+   height: 300px;
+   background-image: url("../public/top200Global.jpg");
+   background-position: center;
+   background-size: cover;
+   border-radius: 16px;
+}
+
+.globalDescription{
+   padding: 20px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.playText{
+   padding-top: 16px;
+   font-size: 25px;
+   color: var(--black)
+}
+
+.titleText{
+   padding-top: 4px;
+   font-size: 30px;
+   font-weight: 600;
+   color: var(--orange)
+}
+
+.updateText{
+   padding-top: 4px;
+   font-weight: 300;
+   font-size: 16px;
+   color: var(--gray);
+}
+
+.textDescription{
+   width: 60%;
+   font-weight: 300;
+   padding-top: 4px;
+   font-size: 14px;
+   color: var(--gray);
+}
+
+.buttonsContainer{
+   display: flex;
+   gap: 10px;
+}
+
+.likeButton{
+   font-size: 12px;
+   padding: 10px 20px;
+   border-radius: 8px;
+   border: none;
+   color: var(--white);
+   background-color: var(--orange);
+}
+
+.songsTop200Container{
+   width: 100%;
+   padding: 0px 60px;
+   display: flex;
+   flex-direction: column;
+}
+
+.headerListTop200{
+   width: 100%;
+   display: grid;
+   grid-template-columns: 4fr 3fr 3fr;
+   gap: 20px;
+   margin-bottom: 12px;
+   color: var(--gray);
+   font-size: 14px;
+}
