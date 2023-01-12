@@ -2,6 +2,7 @@ import { useRouter } from "next/router"
 import { useState, useEffect } from 'react'
 import Top200 from "../../../components/Top200"
 import Navigation from "../../../components/Navigation"
+import { API_KEY } from "../../../config/key"
 
 export default function Top200ByCountry () {
   const router = useRouter()
@@ -29,7 +30,7 @@ export default function Top200ByCountry () {
       const options = {
         method: 'GET',
         headers: {
-          'X-RapidAPI-Key': 'de731bf4d7mshe61421839551803p1110dejsn29749a8c0618',
+          'X-RapidAPI-Key': API_KEY,
           'X-RapidAPI-Host': 'spotify81.p.rapidapi.com'
         }
       }
@@ -57,11 +58,22 @@ export default function Top200ByCountry () {
           height: "100%"
         }}
         >
-          <Top200
-            country={country}
-            type={country}
-            tracks={tracks}
-          />
+          <section
+            style={{
+              width: "100%",
+              height: "100vh",
+              display: "flex",
+              flexDirection: "column",
+              overflow: "hidden",
+              overflowY: "scroll"
+            }}
+          >
+            <Top200
+              country={country}
+              type={country}
+              tracks={tracks}
+            />
+          </section>
         </section>
       </div>
     </>
